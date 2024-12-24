@@ -1,0 +1,13 @@
+python -u main.py --num_round 60 --local_epoch 3 --eval_interval 1 --frac 1.0 --batch_size 1024 --log_dir log --method FedHCDR --lr 0.001 --seed 42 --lam 2.0 --gamma 2.0 Food Kitchen Clothing Beauty
+python -u main.py --num_round 60 --local_epoch 3 --eval_interval 1 --frac 1.0 --batch_size 1024 --log_dir log --method LocalGNN --lr 0.001 --seed 42  Food Kitchen Clothing Beauty
+python -u main.py  --log_dir log --method LocalGNN --load_prep --model_id 1709476223 --do_eval --seed 42 Food Kitchen Clothing Beauty
+
+python -u trainFedMa.py --num_round 500 --local_epoch 3 --eval_interval 1 --frac 1.0 --batch_size 1024 --log_dir log --method LocalGNN --model_id 1732693711 --lr 0.001 --seed 42  Food Kitchen Clothing Beauty
+python -u trainFedMa.py --log_dir log --method LocalGNN --load_prep --model_id 1732693711 --do_eval --seed 42 Food Kitchen Clothing Beauty
+
+python -u trainFedMa.py --num_round 10 --local_epoch 3 --eval_interval 1 --frac 1.0 --batch_size 1024 --log_dir log --method LocalGNN --model_id 1734603428 --lr 0.001 --seed 42  Food Kitchen Clothing Beauty
+python -u trainFedMa.py --log_dir log --method LocalGNN --load_prep --model_id 1734603428 --do_eval --seed 42 Food Kitchen Clothing Beauty
+python -u main.py --log_dir log --method LocalGNN --load_prep --model_id 1732693711 --do_eval --seed 42 Food Kitchen Clothing Beauty
+
+python -u trainFedMa.py --num_round 10 --local_epoch 3 --eval_interval 1 --frac 1.0 --batch_size 1024 --log_dir log --method LocalGNN --model_id 1734923088 --lr 0.001 --seed 42  Food Kitchen Clothing Beauty
+python -u main.py --log_dir log --method LocalGNN --load_prep --model_id 1734935630 --do_eval --seed 42 Food Kitchen Clothing Beauty
